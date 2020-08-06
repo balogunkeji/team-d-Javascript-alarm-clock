@@ -1,0 +1,271 @@
+body { 
+    font-family: 'Nunito', sans-serif;
+}
+
+.general{
+    margin: 0 auto;
+    width: 70%;
+    background-color: white;
+    border: 1px solid grey; 
+    box-shadow: inset 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+
+}
+.top {
+    margin: 0 auto;
+    width:70%;
+}
+
+.identifier { 
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.darkmodeoption { 
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container {
+    width: 10%; 
+    margin-top: 17px;
+}
+
+.toggle-btn, .toggle-btn1, .toggle-btn2, .toggle-btn3 {
+    width: 30px; 
+    height:15px; 
+    background: gray; 
+    border-radius: 30px; 
+    padding: 5px;
+} 
+
+.toggle-btn > .inner-circle {
+    width: 15px; 
+    height: 15px; 
+    background: white; 
+    border-radius: 50%;
+}
+
+.toggle-btn1 > .inner-circle {
+    width: 15px; 
+    height: 15px; 
+    background: white; 
+    border-radius: 50%;
+}
+
+.toggle-btn2 > .inner-circle {
+    width: 15px; 
+    height: 15px; 
+    background: white; 
+    border-radius: 50%;
+}
+
+.toggle-btn3 > .inner-circle {
+    width: 15px; 
+    height: 15px; 
+    background: white; 
+    border-radius: 50%;
+}
+
+.toggle-btn.active {
+    background: royalblue;
+}
+
+
+.toggle-btn1.active {
+    background: royalblue;
+}
+
+
+.toggle-btn2.active {
+    background: royalblue;
+}
+
+
+.toggle-btn3.active {
+    background: royalblue;
+}
+
+.toggle-btn.active > .inner-circle {
+    margin-left: 15px;
+}
+
+
+.toggle-btn1.active > .inner-circle {
+    margin-left: 15px;
+}
+
+
+.toggle-btn2.active > .inner-circle {
+    margin-left: 15px;
+}
+
+
+.toggle-btn3.active > .inner-circle {
+    margin-left: 15px;
+}
+
+
+.middle {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.clock-container { 
+    position: relative;
+    width: 150px; 
+    margin: 0 auto;
+}
+.clock {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: white;
+    border: 5px solid black ;
+    box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.minute, .hour {
+    position: absolute;
+    height: 50px;
+    width: 1.5px;
+    margin: auto;
+    top: -30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    transform-origin: bottom center;
+    transform: rotate(0 deg);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.minute {
+    position: absolute;
+    height: 70px;
+    width: 3px;
+    top: -45%;
+    left: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    transform: rotate(90deg);
+}
+
+.second {
+    position: absolute;
+    height: 55px;
+    width: 2px;
+    margin: auto;
+    top: -30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: #ff4b3e;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.dot {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 100px;
+    border: 2px solid #1b1b1b;
+    border-radius: 100%;
+    background: white;
+    margin: auto;
+    z-index: 1;
+}
+
+.timestamp { 
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+}
+
+.time1 { 
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+}
+
+.container2 {
+    width: 10%; 
+    margin-top: 25px;
+}
+
+.dayselector { 
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img.arrow, img.arrow2, img.arrow3 {
+    width: 15px;
+    height: 15px; 
+    margin-left: 15px;
+    margin-top: 20px;
+    color: white; 
+}
+
+.day {
+    padding: 2px ;
+    
+}
+
+.daysofweek, .daysofweek2, .daysofweek3 {
+    display: none; 
+}
+
+.daysofweekactive {
+    display: block;
+}
+
+.darkmode { 
+    background: black; 
+    color: white; 
+}
+
+.whitearrow {
+    width: 22px;
+    height: 22px; 
+}
+
+.plus { 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.plusbutton { 
+    position: relative; 
+    width: 35px;
+    height: 35px;
+    left: 50%; 
+    margin-top: 30px;
+}
